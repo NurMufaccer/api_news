@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  margin: 0px auto;
+  max-width: 1440px;
+}
+* {
+  box-sizing: border-box;
+}
+.newsHeader {
+  background-color: #f6f6f6;
+}
+.navBar {
+  padding: 6px 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbarEnd {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo {
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+}
+.news {
+  background-color: #5d5fef;
+  color: white;
+  padding: 4px;
+  margin-right: 2px;
+}
+.newsLink {
+  font-size: 16px;
+  font-weight: 700;
+  color: #5d5fef;
+}
+.blog {
+  font-size: 16px;
+  font-weight: 400;
+  color: #a3a3a3;
+}
+.newsTitleContainer {
+  padding: 6px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.newsCount {
+  padding: 6px 16px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.view {
+  padding: 6px 16px;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+.shortItem {
+  font-size: 18px;
+  font-weight: 400;
+}
+.shortView {
+  margin-left: 16px;
+  color: #abadc6;
+  font-size: 14px;
+  font-weight: 600;
+}
+.btnToday {
+  border: 2px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #5d5fef;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+.btnTrending {
+  border: 2px solid #5d5fef;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
