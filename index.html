@@ -19,23 +19,39 @@
         </div>
       </nav>
       <hr />
-      <div id="newsTitleContainer"></div>
+      <div id="newsTitleContainer" class="newsCategory"></div>
+      <div class="searchDiv">
+        <input
+          type="text"
+          id="inputField"
+          class="search"
+          placeholder="Search..."
+        />
+        <button class="btnToday" onclick="handleSearch()">Search</button>
+      </div>
     </header>
     <main>
-      <div class="newsCount">
-        <h3>4 items found for category Entertainment</h3>
-      </div>
-      <div class="view">
-        <div>
-          <h3 class="shortItem">
-            Sort By View: <span class="shortView">Default</span>
-          </h3>
+      <section>
+        <div class="newsCount">
+          <h3>4 items found for category Entertainment</h3>
         </div>
-        <div>
-          <button class="btnToday">Today’s Pick</button>
-          <button class="btnTrending">Trending</button>
+      </section>
+      <section>
+        <div class="view">
+          <div>
+            <h3 class="shortItem">
+              Sort By View: <span class="shortView">Default</span>
+            </h3>
+          </div>
+          <div>
+            <button class="btnToday">Today’s Pick</button>
+            <button class="btnTrending">Trending</button>
+          </div>
         </div>
-      </div>
+      </section>
+      <section>
+        <div id="newsContainer" class="newsContainerBox"></div>
+      </section>
     </main>
     <footer></footer>
     <script src="./script.js"></script>

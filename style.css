@@ -22,6 +22,25 @@ body {
   align-items: center;
   gap: 12px;
 }
+.newsCategory {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px;
+  padding: 10px 25px;
+}
+.newsCategoryBtn {
+  border: none;
+  border-radius: 5px;
+  background: #eeefff;
+  padding: 5px 10px;
+  color: #858585;
+  font-size: 18px;
+  font-weight: 400;
+}
+.newsCategoryBtn:focus {
+  color: var(--Iris-100, #5d5fef);
+}
 .logo {
   font-size: 16px;
   font-weight: 700;
@@ -48,6 +67,29 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.searchDiv {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+.search {
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 10px;
+
+  padding: 8px;
+  width: 40%;
+  box-sizing: border-box;
+  border: 2px solid #718797;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.search:focus {
+  border: 2px solid #5d5fef;
 }
 .newsCount {
   padding: 6px 16px;
@@ -87,5 +129,80 @@ body {
   background-color: white;
   margin-left: 10px;
   font-size: 18px;
+  font-weight: 400;
+}
+.newsContainerBox {
+  margin-top: 40px;
+  padding: 20px;
+}
+.newsBlog {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 25px;
+  margin-top: 30px;
+}
+.newsBlogImage {
+  width: 100%;
+  height: 100%;
+}
+.newsBlogImage img {
+  width: 100%;
+  align-self: stretch;
+  object-fit: cover;
+  border-radius: 10px;
+  background: lightgray 50% / cover no-repeat;
+}
+.newsBlogContent {
+}
+.newsHeading {
+  color: #121221;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+.newsDescription {
+  width: 90%;
+  text-align: justify;
+  color: #949494;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  padding-bottom: 16px;
+}
+
+.repo {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-items: center;
+  gap: 15px;
+}
+.repoImg {
+  display: flex;
+
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.repoImg img {
+  width: 40px;
+  height: 40px;
+  border-radius: 155px;
+  background: lightgray 50% / cover no-repeat;
+}
+
+.repoName {
+  margin: 0;
+  padding: 5px 0;
+  width: 200px;
+  color: var(--Black, #2b2c34);
+  font-size: 16px;
+  font-weight: 400;
+}
+.repoDate {
+  margin: 0;
+  padding: 5px 0;
+  color: var(--Blacks-Mid-emphasis, #718797);
+  font-size: 14px;
   font-weight: 400;
 }
