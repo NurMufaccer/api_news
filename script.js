@@ -14,6 +14,7 @@ const handleNewsCategory = async () => {
 };
 
 const handleNews = async (catId) => {
+  document.getElementById("loading").style.display = "block";
   const response = await fetch(
     `https://openapi.programming-hero.com/api/news/category/${catId}`
   );
@@ -21,6 +22,7 @@ const handleNews = async (catId) => {
   const newsContentBox = document.getElementById("newsContainer");
   newsContentBox.innerHTML = "";
   data.data.forEach((item) => {
+    document.getElementById("loading").style.display = "none";
     const div = document.createElement("div");
     div.classList.add("newsBlog");
     div.innerHTML = `

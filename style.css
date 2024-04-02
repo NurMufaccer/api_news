@@ -91,6 +91,12 @@ body {
 .search:focus {
   border: 2px solid #5d5fef;
 }
+/* loader */
+.loader {
+  display: none;
+  text-align: center;
+  padding: 30px;
+}
 .newsCount {
   padding: 6px 16px;
   font-size: 18px;
